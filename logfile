@@ -1,0 +1,18 @@
+2019-09-17 18:12:27.429 +08 [5648] LOG:  listening on IPv6 address "::1", port 5432
+2019-09-17 18:12:27.433 +08 [5648] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-09-17 18:12:27.908 +08 [20500] LOG:  database system was interrupted; last known up at 2019-09-17 07:40:08 +08
+2019-09-17 18:13:09.203 +08 [20500] LOG:  database system was not properly shut down; automatic recovery in progress
+2019-09-17 18:13:09.255 +08 [20500] LOG:  redo starts at 0/17B64A8
+2019-09-17 18:13:09.255 +08 [20500] LOG:  invalid record length at 0/17B6588: wanted 24, got 0
+2019-09-17 18:13:09.256 +08 [20500] LOG:  redo done at 0/17B6550
+2019-09-17 18:13:09.614 +08 [5648] LOG:  database system is ready to accept connections
+2019-09-17 18:30:14.561 +08 [20228] ERROR:  syntax error at or near "SELECT" at character 21
+2019-09-17 18:30:14.561 +08 [20228] STATEMENT:  SELECT * from to_do
+	SELECT * from to_do;
+2019-09-17 18:42:19.853 +08 [19248] ERROR:  canceling statement due to user request
+2019-09-17 18:42:19.856 +08 [5648] LOG:  received fast shutdown request
+2019-09-17 18:42:19.889 +08 [5648] LOG:  aborting any active transactions
+2019-09-17 18:42:19.902 +08 [20228] FATAL:  terminating connection due to administrator command
+2019-09-17 18:42:19.927 +08 [5648] LOG:  worker process: logical replication launcher (PID 19248) exited with exit code 1
+2019-09-17 18:42:19.946 +08 [14820] LOG:  shutting down
+2019-09-17 18:42:20.251 +08 [5648] LOG:  database system is shut down

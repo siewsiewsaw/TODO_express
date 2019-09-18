@@ -1,0 +1,64 @@
+import {UserController} from "./controller/UserController";
+import {ToDoController} from "./controller/ToDoController";
+
+export const Routes = [{
+    method: "get",
+    route: "/users",
+    controller: UserController,
+    action: "all"
+}, {
+    method: "get",
+    route: "/users/:id",
+    controller: UserController,
+    action: "one"
+}, {
+    method: "post",
+    route: "/users",
+    controller: UserController,
+    action: "save"
+}, {
+    method: "delete",
+    route: "/users/:id",
+    controller: UserController,
+    action: "remove"
+}, {
+    method: "post",
+    route: "/todo",
+    controller: ToDoController,
+    action: "create"
+}, {
+    method: "post",
+    route: "/todo/:id",
+    controller: ToDoController,
+    action: "updcomplete"
+}, {
+    method: "delete",
+    route: "/todo/:id",
+    controller: ToDoController,
+    action: "remove"
+}, {
+    method: "get",
+    route: "/todo",
+    controller: ToDoController,
+    action: "all"
+}, {
+    method: "post",
+    route: "/todo/:id",
+    controller: ToDoController,
+    action: "update"
+}, {
+    method: "get",
+    route: "/todo/category",
+    controller: ToDoController,
+    action: "byCategory"
+}, {
+    method: "get",
+    route: "/todo/Completed",
+    controller: ToDoController,
+    action: "byCompleted"
+}, {
+    method: "get",
+    route: "/todo/created_at",
+    controller: ToDoController,
+    action: "byToday"
+}];
